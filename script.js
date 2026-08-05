@@ -22,8 +22,10 @@ function correct() {
 
     const music = document.getElementById("bgMusic");
 
-    music.volume = 0.5;
-    music.play();
+    if (music) {
+        music.volume = 0.5;
+        music.play();
+    }
 
     document.getElementById("quiz").classList.remove("active");
     document.getElementById("surprise").classList.add("active");
@@ -45,36 +47,7 @@ function correct() {
                     var(--pink) ${((3 - number) / 3) * 360}deg,
                     #ffd9e3 0deg
                 )`;
-        } else {
-            clearInterval(timer);
 
-            document.getElementById("surprise").classList.remove("active");
-            document.getElementById("final").classList.add("active");
-
-            createHearts();
-        }
-    }, 1000);
-}
-    document.getElementById("quiz").classList.remove("active");
-    document.getElementById("surprise").classList.add("active");
-
-    let number = 3;
-    const countdown = document.getElementById("countdown");
-    const ring = document.querySelector(".countdown-ring");
-
-    countdown.textContent = number;
-
-    const timer = setInterval(() => {
-        number--;
-
-        if (number > 0) {
-            countdown.textContent = number;
-
-            ring.style.background =
-                `conic-gradient(
-                    var(--pink) ${((3 - number) / 3) * 360}deg,
-                    #ffd9e3 0deg
-                )`;
         } else {
             clearInterval(timer);
 
