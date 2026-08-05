@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Seseorang yang Spesial ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <main class="card">
+
+        <!-- HALAMAN PERTANYAAN -->
+        <section id="quiz" class="screen active">
+            <div class="lock-icon">🔐</div>
+
+            <span class="eyebrow">A LITTLE SECRET</span>
+            <h1>Rahasia untukmu ❤️</h1>
+            <p class="subtitle">Jawab satu pertanyaan kecil ini untuk membuka sesuatu yang spesial.</p>
+
+            <div class="question-box">
+                <span class="question-number">QUESTION 01</span>
+                <h2>Pilih warna yang benar ✨</h2>
+                <p>Clue: pilih dengan hati kamu.</p>
+            </div>
+
+            <div class="options">
+                <button class="option" onclick="wrong(this)">
+                    <span class="letter">A</span>
+                    <span>💛 Kuning</span>
+                    <span class="arrow">→</span>
+                </button>
+
+                <button class="option" onclick="wrong(this)">
+                    <span class="letter">B</span>
+                    <span>💜 Ungu</span>
+                    <span class="arrow">→</span>
+                </button>
+
+                <button class="option correct-option" onclick="correct()">
+                    <span class="letter">C</span>
+                    <span>💚 Hijau</span>
+                    <span class="arrow">→</span>
+                </button>
+
+                <button class="option" onclick="wrong(this)">
+                    <span class="letter">D</span>
+                    <span>❤️ Merah</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+
+            <p id="hint" class="hint">Pilih salah satu jawaban di atas 👀</p>
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section id="surprise" class="screen">
+            <div class="countdown-wrap">
+                <div class="countdown-ring">
+                    <span id="countdown">3</span>
+                </div>
+                <span class="eyebrow">GET READY</span>
+                <h2>Something special is coming...</h2>
+                <p>Jangan pergi dulu ya ❤️</p>
+            </div>
+        </section>
+
+        <!-- UCAPAN -->
+        <section id="final" class="screen">
+            <div class="birthday-icon">🎂</div>
+            <span class="eyebrow">TODAY IS YOUR DAY</span>
+            <h1>Happy Birthday<br><span>Bum ❤️</span></h1>
+
+            <div class="divider"><span>♥</span></div>
+
+            <div class="message">
+                <p>
+                    Hari ini mungkin merupakan hari spesial kamu.
+                    Maaf tidak bisa merayakan secara langsung.
+                    Terima kasih atas segala jerih payah kamu.
+                </p>
+
+                <p>
+                    Semua pasti ada yang bisa dipetik.
+                    Aku tahu kamu selama ini berjuang.
+                </p>
+
+                <p>
+                    Semoga sehat selalu, dan juga selalu diberikan
+                    keberuntungan, kemudahan, dan kebaikan di setiap hal.
+                </p>
+
+                <p class="highlight">
+                    Semangat, keep strong.<br>
+                    I love you. ❤️
+                </p>
+            </div>
+
+            <div class="signature">
+                <span>With love,</span>
+                <strong>Your Love</strong>
+            </div>
+
+            <a href="https://contoh.com" target="_blank" class="link-button">
+                <span>💌</span>
+                <span>
+                    <small>There is a little gift for you</small>
+                    Hadiah di sini
+                </span>
+                <span class="gift-arrow">→</span>
+            </a>
+        </section>
+
+    </main>
+
+    <div id="toast" class="toast">Hmm... bukan itu jawabannya 😊</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
